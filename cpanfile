@@ -1,6 +1,7 @@
 requires 'perl', '5.008005';
 
 # requires 'Some::Module', 'VERSION';
+requires 'Crypt::OpenSSL::RSA';
 requires 'Crypt::OpenSSL::VerifyX509';
 requires 'Crypt::OpenSSL::X509';
 requires 'DateTime::Format::ISO8601';
@@ -10,6 +11,8 @@ requires 'Digest::SHA1';
 requires 'Encode';
 requires 'JSON';
 requires 'LWP::Simple';
+requires 'LWP::UserAgent';
+requires 'Method::Signatures::Simple';
 requires 'MIME::Base64';
 requires 'Moo';
 requires 'Try::Tiny';

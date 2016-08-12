@@ -1,26 +1,28 @@
-# NAME
+## test\_mode
 
-Net::Amazon::AlexaValidator - Blah blah blah
+Use this variable to set the Validator in test mode. It is sometimes easier to
+test by passing in a request data structure (and makes unit testing possible)
+instead of passing in an actual Catalyst Request object.
 
-# SYNOPSIS
+## echo\_domain
 
-    use Net::Amazon::AlexaValidator;
+The echo domain that must be present in the Subject Alternative Names (SANs) section of the signing certificate
 
-# DESCRIPTION
+## application\_id
 
-Net::Amazon::AlexaValidator is
+Application ID from your app's Amazon Alexa App settings
 
-# AUTHOR
+## cert\_dir
 
-Sara Siegal <ssiegal@gmail.com>
+Directory in which to store your Alexa certificate, once validated
 
-# COPYRIGHT
+## validate\_request
 
-Copyright 2016- Sara Siegal
+Make sure this is a valid Amazon Alexa request. Check things like application\_id, certificates, timestamp.
 
-# LICENSE
+returns { success, error\_msg }
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+## \_invalid\_keychain\_uri
 
-# SEE ALSO
+Validate keychain uri from Amazon is proper. undef indicates no errors found.
+Example URI: https://s3.amazonaws.com/echo.api/echo-api-cert-3.pem
