@@ -47,3 +47,7 @@ Directory in which to store your Alexa certificate, once validated
 Verifies this is a valid Amazon Alexa request. Checks things like application\_id, certificates, timestamp.
 
 returns { success, error\_msg }
+
+# ACKNOWLEDGEMENTS
+
+Big thanks to my awesome employer, ZipRecruiter, for giving me the time to develop this module!

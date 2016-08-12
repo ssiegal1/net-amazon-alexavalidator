@@ -302,4 +302,11 @@ sub _invalid_keychain_uri {
   return $error_msg;
 }
 
+
+=head1 ACKNOWLEDGEMENTS
+
+Big thanks to my awesome employer, ZipRecruiter, for giving me the time to develop this module!
+
+=cut
+
 1;
